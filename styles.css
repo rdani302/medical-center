@@ -1,0 +1,518 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #222;
+    padding: 10px 0;
+    color: white;
+    text-align: center;
+    position: block;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background-color: #ffcc00;
+    color: #333;
+}
+
+
+/* Hero Section */
+.hero {
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    height: 60vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text contrast */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 3px #000;
+}
+
+.cta-btn {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #333;
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* Smooth scroll effect for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #444;
+}
+
+.about-us p {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .logo h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .hero {
+        height: 50vh;
+        padding: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .cta-btn {
+        font-size: 1em;
+        padding: 8px 15px;
+    }
+
+    .about-us p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo h1 {
+        font-size: 1.2em;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .hero {
+        height: 40vh;
+        padding: 5px;
+    }
+
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    .hero p {
+        font-size: 0.9em;
+    }
+
+    .cta-btn {
+        font-size: 0.9em;
+        padding: 5px 10px;
+    }
+
+    .about-us p {
+        font-size: 0.9em;
+    }
+}
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #333;
+}
+
+/* General Styles FOR  SERVICES*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #222;
+    color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    color: #000000;
+}
+
+.page-title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2em;
+    color: #fff;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.service-box {
+    background-color: #444;
+    border: 1px solid #666;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.service-box h3 {
+    color: #ffd700;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.service-box p {
+    font-size: 0.95em;
+    color: #ccc;
+}
+
+footer {
+    text-align: center;
+    background-color: #000;
+    padding: 10px 0;
+    color: #888;
+    margin-top: 20px;
+}
+/* Contact Us Button Styles */
+.contact-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    background-color: #ffd700;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #e6c200;
+    color: #222;
+}
+
+
+/* Contact Page */
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #444;
+}
+
+.contact h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #555;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1em;
+    color: #ffcc00;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+form button:hover {
+    background-color: #333;
+    color: #ffcc00;
+}
+
+.contact-details {
+    text-align: center;
+    margin-top: 50px;
+    color: #ccc;
+}
+
+.contact-details h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* Blog Page */
+.blog {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #444;
+}
+
+.blog h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.blog-post {
+    display: inline-block;
+    width: 45%;
+    background-color: #555;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: left;
+    padding: 20px;
+}
+
+.blog-post h2 {
+    font-size: 1.5em;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.blog-post p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+/* Our Team Page */
+.team {
+    padding: 50px 20px;
+    background-color: #444;
+    text-align: center;
+}
+
+.team h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.team-member {
+    display: inline-block;
+    width: 30%;
+    background-color: #555;
+    margin: 10px;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.team-member img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-member h2 {
+    font-size: 1.5em;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 1em;
+    color: #ccc;
+}
+
+/* Testimonials Page */
+.testimonials {
+    padding: 50px 20px;
+    background-color: #444;
+    text-align: center;
+}
+
+.testimonials h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.testimonial {
+    display: inline-block;
+    width: 45%;
+    background-color: #555;
+    margin: 10px;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.testimonial p {
+    font-size: 1.2em;
+    color: #ccc;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.testimonial h2 {
+    font-size: 1em;
+    color: #ffcc00;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: block;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .blog-post, .team-member, .testimonial {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li a {
+        font-size: 14px;
+    }
+
+}
